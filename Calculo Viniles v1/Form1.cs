@@ -21,6 +21,7 @@ namespace Calculo_Viniles_v1
         private void button1_Click(object sender, EventArgs e)
         {
             try
+
             {
                 int ancho = Convert.ToInt32(textBoxAncho.Text);
                 int alto = Convert.ToInt32(textBoxAlto.Text);
