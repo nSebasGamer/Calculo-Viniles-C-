@@ -1,6 +1,6 @@
 ﻿namespace Calculo_Viniles_v1
 {
-    partial class Form1
+    partial class Calculo
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,23 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Calculo));
             this.trackBarColores = new System.Windows.Forms.TrackBar();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxAlto = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.textBoxAncho = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.labelColores = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarColores)).BeginInit();
-            this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // trackBarColores
@@ -54,16 +58,6 @@
             this.trackBarColores.Size = new System.Drawing.Size(245, 45);
             this.trackBarColores.TabIndex = 0;
             this.trackBarColores.Scroll += new System.EventHandler(this.trackBar1_Scroll);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(457, 7);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(352, 55);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Calculo Viniles";
             // 
             // label2
             // 
@@ -110,18 +104,9 @@
             this.textBoxAncho.Size = new System.Drawing.Size(255, 20);
             this.textBoxAncho.TabIndex = 5;
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(-13, -3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(840, 64);
-            this.panel1.TabIndex = 7;
-            // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel2.BackColor = System.Drawing.Color.Orange;
             this.panel2.Controls.Add(this.button4);
             this.panel2.Controls.Add(this.button3);
             this.panel2.Controls.Add(this.button2);
@@ -133,12 +118,13 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.SteelBlue;
+            this.button1.BackColor = System.Drawing.Color.Black;
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.SteelBlue;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.button1.Location = new System.Drawing.Point(24, 29);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(220, 53);
@@ -149,12 +135,13 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.SteelBlue;
+            this.button2.BackColor = System.Drawing.Color.Black;
             this.button2.FlatAppearance.BorderColor = System.Drawing.Color.SteelBlue;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.button2.Location = new System.Drawing.Point(24, 115);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(220, 53);
@@ -165,12 +152,13 @@
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.SteelBlue;
+            this.button3.BackColor = System.Drawing.Color.Black;
             this.button3.FlatAppearance.BorderColor = System.Drawing.Color.SteelBlue;
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.button3.Location = new System.Drawing.Point(24, 197);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(220, 53);
@@ -179,9 +167,29 @@
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // labelColores
+            // 
+            this.labelColores.AutoSize = true;
+            this.labelColores.Location = new System.Drawing.Point(502, 157);
+            this.labelColores.Name = "labelColores";
+            this.labelColores.Size = new System.Drawing.Size(54, 13);
+            this.labelColores.TabIndex = 9;
+            this.labelColores.Text = "Colores: 0";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::Calculo_Viniles_v1.Properties.Resources.unnamed;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(24, 5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(55, 56);
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.Color.SteelBlue;
+            this.button4.BackColor = System.Drawing.Color.Black;
             this.button4.FlatAppearance.BorderColor = System.Drawing.Color.SteelBlue;
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
@@ -198,20 +206,47 @@
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // labelColores
+            // panel1
             // 
-            this.labelColores.AutoSize = true;
-            this.labelColores.Location = new System.Drawing.Point(502, 157);
-            this.labelColores.Name = "labelColores";
-            this.labelColores.Size = new System.Drawing.Size(54, 13);
-            this.labelColores.TabIndex = 9;
-            this.labelColores.Text = "Colores: 0";
+            this.panel1.BackColor = System.Drawing.Color.Gold;
+            this.panel1.BackgroundImage = global::Calculo_Viniles_v1.Properties.Resources.pngtree_yellow_black_striped_tape_caution_barrier_symbol_security_risk_background_vector_png_image_46007956;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Location = new System.Drawing.Point(-13, -3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(840, 64);
+            this.panel1.TabIndex = 7;
             // 
-            // Form1
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(449, 8);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(352, 55);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Calculo Viniles";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(611, 64);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(189, 24);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "Calculo Viniles SESA";
+            // 
+            // Calculo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.labelColores);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -222,12 +257,14 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.trackBarColores);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Calculo";
+            this.Text = "Calculo Viniles 1.0 | SESA - Aguascalientes";
             ((System.ComponentModel.ISupportInitialize)(this.trackBarColores)).EndInit();
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -249,6 +286,8 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label labelColores;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label6;
     }
 }
 

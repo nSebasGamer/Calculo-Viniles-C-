@@ -11,9 +11,9 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Calculo_Viniles_v1
 {
-    public partial class Form1 : Form
+    public partial class Calculo : Form
     {
-        public Form1()
+        public Calculo()
         {
             InitializeComponent();
         }
